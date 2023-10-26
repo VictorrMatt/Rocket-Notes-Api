@@ -16,56 +16,56 @@ A aplicação requer um back-end para fornecer as seguintes funcionalidades esse
 
 ## 🔐Requisições:
 ### Sessions:
-*POST / Create (Criação de um novo token Jwt que será necessário para as requisições):*  
-``{
-  "email": "seu_email",
-  "password": "sua_senha"
-}``
+``POST / Create`` (Criação de um novo token Jwt que será necessário para as requisições):  
+> {  
+  >&nbsp;&nbsp;"email": "seu_email",  
+   &nbsp;&nbsp;"password": "sua_senha"  
+}  
 
 ### Users:  
-*PATCH / Avatar:*  
-``Recebe a imagem do avatar que será salva no banco``
+``PATCH / Avatar:``  
+> *Recebe a imagem do avatar que será salva no banco*  
 
-*POST / Create (Criação de usuários):*  
-``{
-  "name": "seu_nome",
-  "email": "seu_email",
-  "password": "sua_senha"
-}``
+``POST / Create`` (Criação de usuários):  
+> {  
+  &nbsp;&nbsp;"name": "seu_nome",  
+  &nbsp;&nbsp;"email": "seu_email",  
+  &nbsp;&nbsp;"password": "sua_senha"  
+}  
 
-*PUT / Update (Atualiza dados do usuário):*  
-``{
-  "name": "novo_nome",
-  "email": "novo_email",
-  "password": "nova_senha",
-  "old_password": "senha_antiga"
-}``
+``PUT / Update`` (Atualiza dados do usuário):  
+> {  
+  &nbsp;&nbsp;"name": "novo_nome",  
+  &nbsp;&nbsp;"email": "novo_email",  
+  &nbsp;&nbsp;"password": "nova_senha",  
+  &nbsp;&nbsp;"old_password": "senha_antiga"  
+}  
 
 ### Notes:  
-*GET / Index (Retorna notas referentes a title e tags):*  
-``Queries: Title e Tags.``
+``GET / Index`` (Retorna notas referentes a title e tags):  
+> *Queries: Title e Tags.*  
 
-*DELETE / Delete (Deleta uma nota):*  
-``Recebe o ID da nota por meio do route params.``
+``DELETE / Delete`` (Deleta uma nota):  
+> *Recebe o ID da nota por meio do route params.*  
 
-*GET / Read (Retorna a nota e as suas tags):*  
-``Recebe o ID da nota por meio do route params.``
+``GET / Read`` (Retorna a nota e as suas tags):  
+> *Recebe o ID da nota por meio do route params.*  
 
-*POST / Create (Cria uma nova nota):*  
-``{
-  "title": "jegarne",
-  "description": "Massa",
-  "rating": 6,
-  "tags": ["Pamonha", "raimundo"]
-}``
+``POST / Create`` (Cria uma nova nota):  
+> {  
+  &nbsp;&nbsp;"title": "jegarne",  
+  &nbsp;&nbsp;"description": "Massa",  
+  &nbsp;&nbsp;"rating": 6,  
+  &nbsp;&nbsp;"tags": ["Pamonha", "raimundo"]  
+}  
 
 ### Tags:  
-*GET / Index:*  
-``Retorna as tags que foram criadas nas notas pelo usuário.``
+``GET / Index:``  
+> *Retorna as tags que foram criadas nas notas pelo usuário.*  
 
 ### Files:  
-*GET / ? (Recebe o nome da imagem cadastrada no banco e a retorna):*  
-``Recebe o nome da imagem por meio do route params.``
+``GET / ?`` (Recebe o nome da imagem cadastrada no banco e a retorna):    
+> *Recebe o nome da imagem por meio do route params.*  
 
 ## ✔️Tecnologias Utilizadas:
 
